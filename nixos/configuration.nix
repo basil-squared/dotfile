@@ -10,14 +10,18 @@
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
     ];
-  
+  services.flatpak.enable = true;  
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
+   services.flatpak.packages = [
+  	'org.vinegarhq.Sober'
+	'io.github.equicord.equibop'
+	'io.github.ungoogled_software.ungoogled_chromium'
+  ];
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
