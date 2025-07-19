@@ -1,4 +1,3 @@
-{...}
 {
   
   home-manager.users.juniperg.wayland.windowManager.hyprland.settings = {
@@ -23,5 +22,5 @@
           9)
       );
     };
-  }
+  };
 }
