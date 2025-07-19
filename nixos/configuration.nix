@@ -14,7 +14,20 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  
+   services.xserver.videoDrivers = [ "nvidia" ];
+     hardware.nvidia = {
+   modesetting.enable = true;
+   open = false;
+   nvidiaSettings = true;
+   package = config.boot.kernelPackages.nvidiaPackages.stable;
+ };
+ fonts = {
+    enableDefaultPackages = true;
+    fontconfig.enable = true;
+    packages = [
+      pkgs.nerd-fonts.jetbrains-mono
+    ];
+  };
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
    
@@ -75,6 +88,7 @@
   environment.systemPackages = with pkgs; [
   neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   git
+  wlr-randr
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

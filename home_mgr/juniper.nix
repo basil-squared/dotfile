@@ -16,6 +16,7 @@
   home.stateVersion = "25.05"; # Please read the comment before changing.
   # The home.packages option allows you to install Nix packages into your
   # environment.
+  
   home.packages = [
   	pkgs.grim
 	pkgs.slurp
@@ -51,6 +52,8 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 	".config/river/" = { source = ./linked-dots/river; target = ".config/river/";};
+  ".config/waybar/" = { source = ./linked-dots/waybar; target = ".config/waybar/";};
+  ".config/nvim/" = { source = ./linked-dots/nvim; target = ".config/nvim/";};
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
