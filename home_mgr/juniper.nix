@@ -7,6 +7,9 @@
   home.homeDirectory = "/home/juniperg";
   programs.firefox.enable = true;
   programs.fuzzel.enable = true;
+  nixpkgs.config = {
+  allowUnfree = true;
+  };
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -29,6 +32,15 @@
   pkgs.nautilus
   pkgs.hyprpaper
   pkgs.pamixer
+  pkgs.vscode-fhs
+  pkgs.steam-unwrapped
+
+  pkgs.grim
+  pkgs.slurp
+  pkgs.grimblast
+  pkgs.fastfetch
+  pkgs.hyfetch
+  pkgs.hellwal
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.

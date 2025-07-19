@@ -16,6 +16,11 @@
     #"com.obsproject.Studio"
     #"im.riot.Riot"
     "org.vinegarhq.Sober"
+    "io.github.equicord.equibop"
+    "com.usebottles.bottles"
+    "com.github.tchx84.Flatseal"
+    "org.prismlauncher.PrismLauncher"
+    
   ];
 
 }
