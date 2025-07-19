@@ -16,6 +16,7 @@
     #"com.obsproject.Studio"
     #"im.riot.Riot"
     "org.vinegarhq.Sober"
+    "org.freedesktop.portal.Desktop"
   ];
 
 }
