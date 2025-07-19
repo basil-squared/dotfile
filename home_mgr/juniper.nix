@@ -6,6 +6,32 @@
   home.username = "juniperg";
   home.homeDirectory = "/home/juniperg";
   programs.firefox.enable = true;
+  wayland.windowManager.hyprland.enable = true;
+  wayland.windowManager.hyprland.systemd.variables = ["--all"];
+  wayland.windowManager.hyprland.settings = {
+          "$mod" = "SUPER";
+    monitor = ["$eDP-1,1920x1080,0x0,1"];
+    bind = [
+        "$mod, R, exec, wofi --show drun"
+        ", Print, exec, grimblast copy area"
+      ]
+
+      ++ (
+        # workspaces
+        # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
+        builtins.concatLists (builtins.genList (i:
+            let ws = i + 1;
+            in [
+              "$mod, code:1${toString i}, workspace, ${toString ws}"
+              "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+            ]
+          )
+          9)
+      );
+
+    };
+
+  programs.wofi.enable = true;
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -24,7 +50,7 @@
 	pkgs.wl-clipboard
 	pkgs.foot
 	pkgs.alacritty
-	pkgs.wofi
+  pkgs.gcc
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
