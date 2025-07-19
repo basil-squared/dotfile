@@ -7,9 +7,6 @@
   home.homeDirectory = "/home/juniperg";
   programs.firefox.enable = true;
   programs.fuzzel.enable = true;
-  wayland.windowManager.hyprland.enable = true;
-  wayland.windowManager.hyprland.systemd.variables = ["--all"];
-  wayland.windowManager.hyprland.settings = 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -29,6 +26,7 @@
 	pkgs.foot
 	pkgs.alacritty
   pkgs.gcc
+  pkgs.nautilus
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -56,7 +54,7 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 	".config/river/" = { source = ./linked-dots/river; target = ".config/river/";};
-
+  ".config/hyprpaper/wp" = { source = ./data/; target = ".config/hyprpaper/wp"}
   ".config/nvim/" = { source = ./linked-dots/nvim; target = ".config/nvim/";};
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''

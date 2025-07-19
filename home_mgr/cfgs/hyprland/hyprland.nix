@@ -1,21 +1,25 @@
 {...}:
 
 {
-    home-manager.users.juniper.g.programs.hyprland = {
+    home-manager.users.juniperg.wayland.windowManager.hyprland = {
+        systemd.variables = ["--all"];
         enable = true;
         settings =  {
           "$mod" = "SUPER";
     exec-once = [
-      "waybar"
+      "waybar &"
+      "hyprpaper &"
 
     ];
     monitor = ["eDP-1,1920x1080,0x0,1"];
     bind = [
-        "$mod, R, exec, wofi --show drun"
+        "$mod, R, exec, fuzzel || pkill fuzzel"
         "$mod, Print, exec, grimblast copy area"
         "$mod, M, exit"
         "$mod, V, togglefloating"
         "$mod, F, fullscreen"
+        "$mod, Q,killactive"
+        "$mod, T,exec,alacritty"
         
       ]
       ++ (
