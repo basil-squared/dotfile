@@ -6,15 +6,18 @@
     settings = [{
       layer = "top";
       position = "top";
+      margin-left = 4;
+      margin-right = 4;
+      margin-top = 4;
+      margin-bottom = 0;
+      
       mod = "dock";
       exclusive = true;
       passtrough = false;
       gtk-layer-shell = true;
-      height = 0;
+      height = 30;
       modules-left = [
         "hyprland/workspaces"
-        "custom/divider"
-        "custom/weather"
         "custom/divider"
         "cpu"
         "custom/divider"
@@ -79,7 +82,7 @@
           <tt><small>{calendar}</small></tt>'';
       };
       pulseaudio = {
-        format = "{icon} {volume}%";
+        format = "{icon}  {volume}%";
         tooltip = false;
         format-muted = " Muted";
         on-click = "pamixer -t";

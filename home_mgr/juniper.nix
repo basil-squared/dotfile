@@ -28,6 +28,7 @@
   pkgs.gcc
   pkgs.nautilus
   pkgs.hyprpaper
+  pkgs.pamixer
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
