@@ -1,6 +1,6 @@
 { ... }: {
   imports = [
-    ./waybar.nix
-    ./hyprland.nix
+    ./waybar
+    ./hyprland
   ];
 }
