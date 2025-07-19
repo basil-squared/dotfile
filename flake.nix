@@ -19,6 +19,7 @@
 				nix-flatpak.nixosModules.nix-flatpak
 				./nixos/configuration.nix
 				./nixos/flatpak.nix
+        ./home_mgr/cfgs
 				{home-manager.users.juniperg = ./home_mgr/juniper.nix; }
 			];
 		};

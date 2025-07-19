@@ -52,7 +52,7 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 	".config/river/" = { source = ./linked-dots/river; target = ".config/river/";};
-  ".config/waybar/" = { source = ./linked-dots/waybar; target = ".config/waybar/";};
+
   ".config/nvim/" = { source = ./linked-dots/nvim; target = ".config/nvim/";};
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
