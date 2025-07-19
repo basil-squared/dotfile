@@ -15,11 +15,15 @@
     bind = [
         "$mod, R, exec, fuzzel || pkill fuzzel"
         "$mod, Print, exec, grimblast copy area"
-        "$mod, M, exit"
+        "$mod, M, exit" 
         "$mod, V, togglefloating"
         "$mod, F, fullscreen"
         "$mod, Q,killactive"
         "$mod, T,exec,alacritty"
+        ",XF86AudioRaiseVolume,exec,pamixer -i 5"
+        ",XF86AudioLowerVolume,exec,pamixer -d 5"
+        ",XF86AudioMute,exec,pamixer -t "
+
         
       ]
       ++ (
@@ -38,6 +42,13 @@
       "$mod, mouse:272, movewindow"
       "$mod, mouse:273, resizewindow"
     ];
+    
+    general = {
+        
+        "col.active_border" = "rgb(d00000) rgb(E85D04) 45deg";
+        "col.inactive_border" = "rgb(370617) rgb(03071E) 45deg";
+        
+      };
     decoration = {
       rounding = 10;
       rounding_power = 2;
