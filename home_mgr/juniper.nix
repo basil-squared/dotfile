@@ -54,7 +54,8 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 	".config/river/" = { source = ./linked-dots/river; target = ".config/river/";};
-  ".config/hyprpaper/wp" = { source = ./data/; target = ".config/hyprpaper/wp"}
+  ".config/hyprpaper/wp" = { source = ./data; target = ".config/hyprpaper/wp/";};
+
   ".config/nvim/" = { source = ./linked-dots/nvim; target = ".config/nvim/";};
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
