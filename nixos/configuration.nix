@@ -30,6 +30,10 @@
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
+  xdg.portal = {
+   enable = true;
+   wlr.enable = true;
+  };
   programs.river = {
   	enable = true;
   };
