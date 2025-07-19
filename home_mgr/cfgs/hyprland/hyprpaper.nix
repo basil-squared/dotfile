@@ -4,11 +4,11 @@
     enable = true;
     settings = {
          preload = [
-        "~/.config/hyprpaper/wp/wp.png"
-         ];
+        "~/.config/hyprpaper/wp/wp.webp"
+      ];
          wallpaper = [
-        "eDP-1,~/.config/hyprpaper/wp/wp.png"
-          ];
+        "eDP-1,~/.config/hyprpaper/wp/wp.webp"
+      ];
       };
      
     }; 
