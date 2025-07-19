@@ -67,6 +67,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+  ".cache/hellwal/" = { source = ./linked-dots/hellwal; target = ".cache/hellwal";};
 	".config/river/" = { source = ./linked-dots/river; target = ".config/river/";};
   ".config/hyprpaper/wp" = { source = ./linked-dots/data; target = ".config/hyprpaper/wp/";};
 
