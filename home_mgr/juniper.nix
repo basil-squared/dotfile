@@ -27,6 +27,7 @@
 	pkgs.alacritty
   pkgs.gcc
   pkgs.nautilus
+  pkgs.hyprpaper
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
