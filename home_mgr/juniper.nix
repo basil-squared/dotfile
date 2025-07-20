@@ -41,6 +41,8 @@
   pkgs.fastfetch
   pkgs.hyfetch
   pkgs.hellwal
+  pkgs.pavucontrol
+
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -67,6 +69,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+  ".cache/hyprlock/" = { source = ./linked-dots/hyprlock; target = ".cache/hyprlock/";};
   ".cache/hellwal/" = { source = ./linked-dots/hellwal; target = ".cache/hellwal";};
 	".config/river/" = { source = ./linked-dots/river; target = ".config/river/";};
   ".config/hyprpaper/wp" = { source = ./linked-dots/data; target = ".config/hyprpaper/wp/";};
