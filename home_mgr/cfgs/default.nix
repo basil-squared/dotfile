@@ -5,6 +5,7 @@
     ./swaync
     ./zsh
     ./bash
+    ./vars.nix
     
   ];
 }

@@ -1,5 +1,6 @@
 {...}:
 {
+    
     security.pam.services.hyprlock = {};
     home-manager.users.juniperg.programs.hyprlock = {
       settings = {
