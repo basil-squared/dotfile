@@ -11,11 +11,11 @@
                 {
                     timeout = 300;
                     on-timeout = "brightnessctl -s set 10";
-                    on-resume = "brightnessctl -r"
+                    on-resume = "brightnessctl -r";
                   }
                 {
                     timeout = 400;
-                    on-timeout = "loginctl lock-session"
+                    on-timeout = "loginctl lock-session";
                   }
               ];
           };

@@ -42,6 +42,7 @@
   pkgs.hyfetch
   pkgs.hellwal
   pkgs.pavucontrol
+  pkgs.nwg-look
 
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
