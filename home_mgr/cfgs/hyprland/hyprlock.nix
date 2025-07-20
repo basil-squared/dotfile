@@ -1,8 +1,12 @@
 {...}:
+let
+    username = "juniperg";
+in
 {
     
     security.pam.services.hyprlock = {};
     home-manager.users.juniperg.programs.hyprlock = {
+      enable = true;
       settings = {
           # inspiration from https://github.com/justinmdickey/publicdots/blob/main/.config/hypr/hyprlock.conf
           background = [

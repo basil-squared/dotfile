@@ -9,6 +9,8 @@
     exec-once = [
       "waybar &"
       "hyprpaper &"
+      "hypridle &"
+      "swaync &"
 
     ];
     monitor = ["eDP-1,1920x1080,0x0,1"];
@@ -20,6 +22,7 @@
         "$mod, F, fullscreen"
         "$mod, Q,killactive"
         "$mod, T,exec,alacritty"
+        "$mod SHIFT,L,exec,hyprlock"
         ",XF86AudioRaiseVolume,exec,pamixer -i 5"
         ",XF86AudioLowerVolume,exec,pamixer -d 5"
         ",XF86AudioMute,exec,pamixer -t "
