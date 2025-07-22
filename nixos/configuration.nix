@@ -83,14 +83,25 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   programs.hyprland.enable = true;
-
+  programs.steam = {
+  enable = true;
+  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+   enable = true;
+   enableSSHSupport = true;
+};
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  git
-  wlr-randr
-  xdg-desktop-portal-wlr
+  environment.systemPackages = [
+  pkgs.neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  pkgs.git
+  pkgs.wlr-randr
+  pkgs.xdg-desktop-portal-wlr
+  inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

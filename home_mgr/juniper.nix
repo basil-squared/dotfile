@@ -33,7 +33,6 @@
   pkgs.hyprpaper
   pkgs.pamixer
   pkgs.vscode-fhs
-  pkgs.steam-unwrapped
 
   pkgs.grim
   pkgs.slurp
@@ -43,6 +42,12 @@
   pkgs.hellwal
   pkgs.pavucontrol
   pkgs.nwg-look
+  pkgs.papirus-icon-theme
+  pkgs.material-cursors
+  pkgs.gnupg
+  pkgs.pinentry-all
+  pkgs.wakatime-cli
+
 
 	
     # # Adds the 'hello' command to your environment. It prints a friendly

@@ -5,7 +5,9 @@
         systemd.variables = ["--all"];
         enable = true;
         settings =  {
+
           "$mod" = "SUPER";
+          env = "HYPRCURSOR_THEME,rose-pine-hyprcursor";
     exec-once = [
       "waybar &"
       "hyprpaper &"
@@ -13,7 +15,7 @@
       "swaync &"
 
     ];
-    monitor = ["eDP-1,1920x1080,0x0,1"];
+    monitor = ["eDP-1,1920x1080@120.03Hz,0x0,1"];
     bind = [
         "$mod, R, exec, fuzzel || pkill fuzzel"
         "$mod, Print, exec, grimblast copy area"
