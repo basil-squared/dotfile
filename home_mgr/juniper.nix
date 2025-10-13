@@ -53,7 +53,8 @@
   pkgs.jetbrains-toolbox
   pkgs.nodejs_24
   pkgs.pnpm
-  
+  pkgs.gparted
+  pkgs.mediawriter
 
 	
     # # Adds the 'hello' command to your environment. It prints a friendly
