@@ -47,7 +47,13 @@
   pkgs.gnupg
   pkgs.pinentry-all
   pkgs.wakatime-cli
-
+  pkgs.inkscape
+  pkgs.luarocks
+  pkgs.luajitPackages.tl
+  pkgs.jetbrains-toolbox
+  pkgs.nodejs_24
+  pkgs.pnpm
+  
 
 	
     # # Adds the 'hello' command to your environment. It prints a friendly

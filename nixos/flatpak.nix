@@ -21,6 +21,7 @@
     "com.github.tchx84.Flatseal"
     "org.prismlauncher.PrismLauncher"
     "com.obsproject.Studio"
+    "org.vinegarhq.Vinegar"
   ];
 
 }
