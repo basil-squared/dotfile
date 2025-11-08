@@ -20,8 +20,11 @@
   home.stateVersion = "25.05"; # Please read the comment before changing.
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  
+   
   home.packages = [
+  pkgs.qbittorrent
+  pkgs.sunvox
+  pkgs.mullvad-vpn
   	pkgs.grim
 	pkgs.slurp
 	pkgs.waybar
@@ -55,6 +58,10 @@
   pkgs.pnpm
   pkgs.gparted
   pkgs.mediawriter
+  pkgs.lxqt.lxqt-policykit
+  pkgs.jdk21
+  pkgs.distrobox
+
 
 	
     # # Adds the 'hello' command to your environment. It prints a friendly

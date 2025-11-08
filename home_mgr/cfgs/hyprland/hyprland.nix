@@ -13,6 +13,7 @@
       "hyprpaper &"
       "hypridle &"
       "swaync &"
+      "lxqt-policykit-agent &"
 
     ];
     monitor = ["eDP-1,1920x1080@120.03Hz,0x0,1"];

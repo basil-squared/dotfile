@@ -93,7 +93,15 @@
   programs.gnupg.agent = {
    enable = true;
    enableSSHSupport = true;
+  
 };
+  services.mullvad-vpn = {
+      enable = true;
+      package = pkgs.mullvad-vpn;
+    };
+  
+  users.extraGroups.docker.members = [ "juniperg" ];
+  virtualisation.docker.enable = true;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
